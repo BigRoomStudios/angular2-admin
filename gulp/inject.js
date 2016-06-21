@@ -71,6 +71,7 @@ function injectBower(env) {
 
   var bowerFiles = mainBowerFiles();
   bowerFiles.push(join(__dirname, conf.paths.bower, 'bootstrap/dist/css/bootstrap.min.css'));
+  bowerFiles.push(join(__dirname, conf.paths.bower, 'font-awesome/css/font-awesome.min.css'));
 
   return gulp.src(bowerFiles)
   .pipe(jsFilter)

@@ -1,4 +1,21 @@
 <div class="jumbotron">
-  <h1>Welcome to Angular2 Admin</h1>
+  <h1>Angular2 Admin</h1>
   <p>This is an example application that lets you create, list, update, and delete records</p>
+</div>
+
+<div class="squares">
+
+  <div class="row">
+
+    <div *ngFor="let square of squares" class="col-sm-6 col-md-3">
+      <a [href]="square.link" class="square">
+        <p>
+          <i class="fa fa-2x fa-{{square.icon}}"></i>
+          {{ square.text }}
+        </p>
+      </a>
+    </div>
+
+  </div>
+
 </div>

@@ -3,11 +3,11 @@
   "description": "Angular2 application",
   "main": "index.html",
   "authors": [
-    "ruffiem"
+    "maxatbrs"
   ],
   "license": "MIT",
   "keywords": [],
-  "homepage": "https://github.com/ruffiem/generator-angular2-application-scaffolder",
+  "homepage": "https://github.com/BigRoomStudios/angular2-admin",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "traceur-runtime": "^0.0.107"
+    "traceur-runtime": "^0.0.107",
+    "font-awesome": "^4.6.3"
   }
 }

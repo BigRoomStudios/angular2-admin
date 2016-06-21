@@ -4,23 +4,24 @@ import {it, describe, expect, beforeEach, beforeEachProviders, inject} from 'ang
 import {DashboardComponent} from "./dashboard.component";
 
 describe('DashboardComponent Tests', () => {
-  let list:DashboardComponent;
+  let dashboard:DashboardComponent;
 
   beforeEachProviders(() => [
     DashboardComponent
   ]);
 
   beforeEach(inject([DashboardComponent], l => {
-    list = l;
+    dashboard = l;
   }));
 
   it('Should get 3', () => {
-    list.ngOnInit();
-    expect(list.items.length).toBe(3);
+    dashboard.ngOnInit();
+    expect(dashboard.squares.length).toBe(4);
   });
 
-  it('Should be equal to ["one", "two", "three"]', () => {
-    list.ngOnInit();
-    expect(list.items).toEqual(['one', 'two', 'three']);
-  });
+  /*it('Should be equal to ["one", "two", "three"]', () => {
+    dashboard.ngOnInit();
+    expect(dashboard.squares).toEqual(['one', 'two', 'three']);
+  });*/
+
 });
