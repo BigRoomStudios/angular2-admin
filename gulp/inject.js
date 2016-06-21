@@ -70,6 +70,7 @@ function injectBower(env) {
   var cssFilter = filter('**/*.css', { restore: true});
 
   var bowerFiles = mainBowerFiles();
+  // TODO make this a manifest or auto load it in ya dummy
   bowerFiles.push(join(__dirname, conf.paths.bower, 'bootstrap/dist/css/bootstrap.min.css'));
   bowerFiles.push(join(__dirname, conf.paths.bower, 'font-awesome/css/font-awesome.min.css'));
 

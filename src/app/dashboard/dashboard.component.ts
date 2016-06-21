@@ -19,25 +19,25 @@ export class DashboardComponent implements OnInit {
       {
         text: 'List Items',
         icon: 'list',
-        link: '/list-items'
+        url: '/list-items'
       },
       {
         text: 'Create Item',
         icon: 'plus',
-        link: '/create-item'
+        url: '/create-item'
       },
       {
         text: 'Charts',
         icon: 'pie-chart',
-        link: '/charts'
+        url: '/charts'
       },
       {
         text: 'Settings',
         icon: 'cog'
         ,
-        link: '/settings'
+        url: '/settings'
       }
-    ]
+    ];
   }
 
   notify(event) {

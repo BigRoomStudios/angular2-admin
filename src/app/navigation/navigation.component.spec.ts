@@ -4,23 +4,19 @@ import {it, describe, expect, beforeEach, beforeEachProviders, inject} from 'ang
 import {NavigationComponent} from "./navigation.component";
 
 describe('NavigationComponent Tests', () => {
-  let list:NavigationComponent;
+  let navigation:NavigationComponent;
 
   beforeEachProviders(() => [
     NavigationComponent
   ]);
 
   beforeEach(inject([NavigationComponent], l => {
-    list = l;
+    navigation = l;
   }));
 
   it('Should get 3', () => {
-    list.ngOnInit();
-    expect(list.items.length).toBe(3);
+    navigation.ngOnInit();
+    expect(navigation.navItems.length).toBe(4);
   });
 
-  it('Should be equal to ["one", "two", "three"]', () => {
-    list.ngOnInit();
-    expect(list.items).toEqual(['one', 'two', 'three']);
-  });
 });

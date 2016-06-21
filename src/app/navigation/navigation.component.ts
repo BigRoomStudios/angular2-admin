@@ -8,15 +8,35 @@ import { Component, OnInit } from 'angular2/core';
 
 export class NavigationComponent implements OnInit {
 
-  appForm:any;
-  items:Array<string>;
+  navItems:Array<Object>;
 
   constructor() {
 
   }
 
   ngOnInit() {
-
+    this.navItems =[
+      {
+        text: 'List Items',
+        icon: 'list',
+        url: '/list-items'
+      },
+      {
+        text: 'Create Item',
+        icon: 'plus',
+        url: '/create-item'
+      },
+      {
+        text: 'Charts',
+        icon: 'pie-chart',
+        url: '/charts'
+      },
+      {
+        text: 'Settings',
+        icon: 'cog',
+        url: '/settings'
+      }
+    ];
   }
 
   notify(event) {
