@@ -1,53 +1,5 @@
-<!-- TODO: Turn into directive -->
-<div class="header">
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" ng-click="toggleNav()">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <a ng-click="closeNav()" class="navbar-brand" href="#/">
-          <i class="fa fa-home"></i> Dashboard
-        </a>
-
-      </div>
-
-      <div class="collapse navbar-collapse" id="js-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a><span class="fa fa-cubes"></span> List </a></li>
-          <!--<li><a ng-click="closeNav()" ng-href="#/assets"><span class="fa fa-cubes"></span>  Assets</a></li>-->
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</div>
+<navigation></navigation>
 
 <div class="main-container container">
-
-  <div class="jumbotron">
-    <h1>Welcome to Angular2 Admin</h1>
-    <p>This is an example application that lets you create, list, update, and delete records</p>
-  </div>
-
-
-  <h1>{{ appForm.value.name }}</h1>
-
-  <div class="test">
-    <form [ngFormModel]="appForm" (submit)="notify($event)">
-      <input [(ngModel)]="appForm.value.name" ngControl="name" placeholder="name your app" required />
-      <button type="submit">Change page title</button>
-    </form>
-  </div>
-
-  <h2>Pipe test</h2>
-  <div>
-    {{ 2 | initCaps: 10 }} should equal {{ 32*32 }}
-  </div>
-
+  <dashboard></dashboard>
 </div>
